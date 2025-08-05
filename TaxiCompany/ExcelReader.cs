@@ -15,7 +15,8 @@ public class ExcelReader
         var path = Path.Combine(AppContext.BaseDirectory, "casus.xlsx");
         var wb = new XLWorkbook(path);
         var ws = wb.Worksheet(1);
-
+        
+        Console.WriteLine("Locations to Visit: ");
         var locations = new List<Location>();
         for (var row = 3; row <= 12; row++)
         {
