@@ -1,0 +1,57 @@
+﻿_________________________________________________________________________________________________
+
+Taxibedrijf De Kruik (standplaats Wilhelminapark) heeft een drietal taxi's
+en moet vandaag een tiental reizigers vanen naar de highlights van Tilburg halen/brengen.
+De planner moet zorgen dat de reisbehoefte zo efficiënt mogelijk wordt uitgevoerd en stuurt de taxi’s op het juiste moment naar de juiste locatie.
+
+_________________________________________________________________________________________________
+
+Vraag 1:
+Je kunt de efficiëntie op verschillende manier meten en nastreven:
+    - Zo weinig mogelijk taxi-kilometers
+    - Zo weinig mogelijk totale reistijd
+    - Zo klein mogelijke afwijking van de gewenste vertrek- of aankomsttijd
+Weet je nog meer manieren? En zijn deze in het belang van de reiziger of van het taxibedrijf?
+
+Ja, bijvoorbeeld:
+    In belang van de taxichauffeur/het taxibedrijf:
+        - Zo weinig mogelijk brandstofverbruik
+        - Zo weinig mogelijk CO2 uitstoot
+        - Zo hoog mogelijke bezetting (volle taxi = meer opbrengst per taxi)
+        - Zo min mogelijk wachttijd tussen ritten
+    In belang van de klant:
+        - Zo goedkoop mogelijk (hangt af van totale reistijd)
+        - Zo punctueel mogelijk zijn m.b.t. de opstap- en afzet tijd en dus zo min mogelijk wachten.    
+    
+_________________________________________________________________________________________________
+
+Vraag 2:
+De Excel-lijst welke van “de klant” komt zal moeten worden opgezet in iets wat handig is om in te lezen.
+Maak een C# applicatie welke dit netjes in objecten heeft. Uiteraard mag je hier tools/packages voor gebruiken pm dit voor je te parsen, hou het pragmatisch!
+We willen immers je denkproces weten, niet een applicatie waar jaren tijd in zit.
+
+_________________________________________________________________________________________________
+
+Vraag 3:
+Het taxibedrijf stuurt een taxi eropuit om even langs alle highlights te rijden.
+De volgorde maakt daarbij niet uit, maar de taxi begint bij Wilhelminapark en komt daar na afloop weer terug.
+Breid de applicatie uit met een functie die de meest optimale route berekent (zo weinig mogelijk taxi-kilometers).
+Geef de kortste route terug aan de gebruiker.
+
+Highlights zijn (voor dit):
+- Wilhelminapark
+- Tilburg Universiteit
+- 013 Poppodium
+- Textiel Museum
+- Spoorzone Tilburg
+
+Begint en eindigt bij Wilhelminapark
+
+Result:
+    Total distance for Wilhelminapark to Textiel Museum: 0,44 km.
+    Total distance for Textiel Museum to Spoorzone Tilburg: 1,28 km.
+    Total distance for Spoorzone Tilburg to 013 Poppodium: 0,88 km.
+    Total distance for 013 Poppodium to Tilburg Universiteit: 5,59 km.
+    Total distance for Tilburg Universiteit to Wilhelminapark: 4,01 km.
+    Total distance: 12,19 km.
+    Total travel time at avg 35km/h: 21 minutes. (or 0,35 hours)
